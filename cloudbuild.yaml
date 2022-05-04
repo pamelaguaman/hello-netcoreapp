@@ -5,7 +5,7 @@ steps:
 # combine the restore and publish operations in a single statement.
 - name: 'mcr.microsoft.com/dotnet/sdk'
   entrypoint: 'dotnet'
-  args: [ 'publish', '-c', 'Release' ]
+  args: [ 'publish', 'src/hello-netcoreapp.csproj','-c', 'Release' ]
 
 # Build the app image.
 # - name: 'gcr.io/cloud-builders/docker'
