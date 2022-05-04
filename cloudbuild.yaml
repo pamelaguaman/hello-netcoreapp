@@ -2,7 +2,7 @@
 steps:
 
 # .NET Core 2.0 by default restores before any build, so we can
-# combine the restore and publish operations in a single statements.
+# combine the restore and publish operations in a single statements..
 - name: 'mcr.microsoft.com/dotnet/sdk'
   entrypoint: 'dotnet'
   args: [ 'publish', 'src/hello-netcoreapp.csproj','-c', 'Release' ]
