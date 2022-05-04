@@ -9,8 +9,8 @@ steps:
 
 # Build the app image.
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/helloNetCoreApp', '.' ]
-  dir: './bin/Release/netcoreapp/publish'
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/HELLO-NETCOREAPP-PAM', '.' ]
+  dir: './src'
 
 # Publish the app.
-images: [ 'gcr.io/$PROJECT_ID/helloNetCoreApp' ]
+images: [ 'gcr.io/$PROJECT_ID/HELLO-NETCOREAPP-PAM' ]
