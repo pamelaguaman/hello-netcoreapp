@@ -8,9 +8,9 @@ steps:
   args: [ 'publish', 'src/hello-netcoreapp.csproj','-c', 'Release' ]
 
 # Build the app image.
-- name: 'gcr.io/cloud-builders/docker'
+- name: 'gcr.io/cloud-builderss/docker'
   args: [ 'build', '-t', 'gcr.io/beautycounter-drafts/hello-netcoreapp', '.' ]
-  
+
 
 # # Publish the app.
 images: [ 'gcr.io/beautycounter-drafts/hello-netcoreapp' ]
