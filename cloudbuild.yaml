@@ -10,7 +10,7 @@ steps:
 # Build the app image.
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/hello-netcoreapp', '.' ]
-  dir: 'docker'
+  dir: '.'
 
 
 # # Publish the app.
