@@ -14,4 +14,4 @@ steps:
 
 
 # # Publish the app.
-# images: [ 'gcr.io/beautycounter-drafts/hello-netcoreapp' ]
+images: [ 'gcr.io/$PROJECT_ID/hello-netcoreapp' ]
