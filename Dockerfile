@@ -19,7 +19,7 @@ RUN scripts/build.sh "fdd" "netcoreapp2.0"
 
 # Runtime image
 
-FROM microsoft/dotnet:2.0-runtime
+FROM mcr.microsoft.com/dotnet/core/runtime:2.2
 
 LABEL maintainer "Philipp Gille"
 
